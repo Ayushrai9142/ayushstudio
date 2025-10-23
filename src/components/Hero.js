@@ -1,0 +1,51 @@
+import React from 'react';
+import './Hero.css';
+import profileImg from '../assets/images/profile.jpg';
+import resumePdf from '../assets/resume/resume.pdf';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Typewriter } from 'react-simple-typewriter';
+
+const Hero = () => {
+  return (
+    <section className="hero" id="about">
+      <div className="hero-text">
+        <div className="eyebrow">Hello — I build web interfaces</div>
+        <h1>Hi, I'm <span className="accent">Ayush Rai</span> — Web Developer</h1>
+        <h2>
+          <Typewriter
+            words={['React Developer', 'UI/UX Designer', 'AI Explorer']}
+            loop={0}
+            cursor
+            cursorStyle="_"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </h2>
+        <div className="cta">
+          <a className="btn" href="#projects">View Projects</a>
+          <a className="btn-secondary" href="mailto:ayushrai9142@gmail.com">Contact Me</a>
+          <a className="btn" href={resumePdf} download>Download Resume</a>
+        </div>
+      </div>
+
+      <aside className="profile-card">
+        <img src={profileImg} alt="Ayush Rai Profile" />
+        <div className="profile-info">
+          <h3>Ayush Rai</h3>
+          <p>B.Tech CS • Web Developer • UI/UX Enthusiast</p>
+          <div className="socials">
+            <a href="https://github.com/ayushrai9142" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={24} />
+            </a>
+            <a href="https://linkedin.com/in/ayushrai9142" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin size={24} />
+            </a>
+          </div>
+        </div>
+      </aside>
+    </section>
+  );
+};
+
+export default Hero;

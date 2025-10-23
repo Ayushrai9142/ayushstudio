@@ -1,0 +1,28 @@
+#skills {
+  padding: 80px 7%;
+  text-align: center;
+}
+
+#skills h2 {
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-pill {
+  background: #007bff;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: transform 0.3s;
+}
+
+.skill-pill:hover {
+  transform: scale(1.1);
+}

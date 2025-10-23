@@ -1,0 +1,112 @@
+#projects {
+  padding: 80px 7%;
+  text-align: center;
+}
+
+#projects h2 {
+  margin-bottom: 30px;
+}
+
+/* Grid layout for project cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+}
+
+/* Individual project card */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.6s, box-shadow 0.3s;
+}
+
+.card.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #007bff;
+  margin: 10px 0 8px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Tags section */
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.tag {
+  padding: 5px 12px;
+  border-radius: 25px;
+  background: #007bff;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Project links buttons */
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.project-links a {
+  padding: 5px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  background: #222;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.project-links a:hover {
+  background: #007bff;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  #projects {
+    padding: 60px 5%;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .tag {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
