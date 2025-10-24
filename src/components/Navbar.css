@@ -36,20 +36,27 @@ header .brand .dot {
   margin-right: 10px;
 }
 
-header nav ul {
+/* NAVIGATION */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+nav ul {
   display: flex;
   gap: 25px;
   list-style: none;
 }
 
-header nav ul li a {
+nav ul li a {
   text-decoration: none;
   font-weight: 500;
   position: relative;
   color: inherit;
 }
 
-header nav ul li a::after {
+nav ul li a::after {
   content: '';
   height: 2px;
   width: 0;
@@ -60,17 +67,18 @@ header nav ul li a::after {
   transition: 0.3s;
 }
 
-header nav ul li a:hover::after {
+nav ul li a:hover::after {
   width: 100%;
 }
 
-header .actions {
+/* ACTIONS */
+.actions {
   display: flex;
   gap: 15px;
   align-items: center;
 }
 
-header .actions .icon-btn {
+.icon-btn {
   font-size: 1.2rem;
   background: none;
   border: none;
@@ -78,7 +86,7 @@ header .actions .icon-btn {
   color: #007bff;
 }
 
-header .actions .btn {
+.btn {
   padding: 8px 20px;
   background: #007bff;
   color: #fff;
@@ -86,28 +94,71 @@ header .actions .btn {
   transition: 0.3s;
 }
 
-header .actions .btn:hover {
+.btn:hover {
   background: #0056b3;
 }
 
-/* Responsive Hamburger */
+/* HAMBURGER */
 .hamburger {
   display: none;
   background: none;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 
-@media(max-width:768px) {
-  nav ul {
+/* RESPONSIVE FIXES */
+@media(max-width: 768px) {
+  header .container {
     flex-direction: column;
-    display: none;
+    align-items: flex-start;
+    padding: 15px 5%;
   }
-  nav ul.show {
-    display: flex;
-  }
+
   .hamburger {
     display: block;
+    margin-left: auto;
   }
+
+  nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    display: none;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .actions {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* DARK MODE ADJUSTMENT */
+.App.dark header {
+  background: #222;
+}
+.App.dark .btn {
+  background: #09f;
+  color: #000;
+}
+.App.dark .icon-btn {
+  color: #09f;
 }
