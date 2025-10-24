@@ -9,24 +9,24 @@ const projects = [
     title: "Portfolio Website",
     desc: "Responsive portfolio with dark mode, animations and accessibility-first design.",
     img: project1,
-    tags: ["HTML", "CSS", "JS", "React"],
-    demo: "#",
+    tags: ["HTML", "CSS", "JS"],
+    demo: "https://ayushstudio.netlify.app",
     code: "https://github.com/ayushrai9142/portfolio-2"
   },
   {
     title: "Exam Portal",
     desc: "Secure exam system using JS + Firebase Auth — simple UI & robust flow.",
     img: project2,
-    tags: ["JS", "Firebase", "React"],
-    demo: "#",
+    tags: ["HTML", "CSS","JS", "Firebase"],
+    demo: "https://exam-porta.netlify.app",
     code: "https://github.com/ayushrai9142/exam-portal"
   },
   {
     title: "Love Letter Maker",
     desc: "Lightweight JS tool to create minimalist posters — drag, edit, export.",
     img: project3,
-    tags: ["HTML", "CSS", "JS"],
-    demo: "#",
+    tags: ["HTML", "CSS", "JS","firebase"],
+    demo: "https://143-letter.netlify.app",
     code: "https://github.com/ayushrai9142/love-letter"
   },
 ];
