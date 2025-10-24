@@ -162,3 +162,27 @@ nav ul li a:hover::after {
 .App.dark .icon-btn {
   color: #09f;
 }
+/* Initial hidden nav & actions for mobile */
+nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+/* Show menu with smooth slide down */
+nav.show {
+  max-height: 500px; /* sufficient max height for full menu */
+  transition: max-height 0.5s ease-in;
+}
+
+/* Transition for ul and actions (optional smooth fading) */
+nav ul, .actions {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+nav.show ul, nav.show .actions {
+  opacity: 1;
+  pointer-events: auto;
+}
