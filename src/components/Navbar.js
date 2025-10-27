@@ -33,7 +33,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             <button className="icon-btn" onClick={toggleTheme} aria-label="Toggle Theme">
               {theme === 'dark' ? <FaSun /> : <FaMoon />}
             </button>
-            <a className="btn" href="{resumePdf}" download>Resume</a>
+            <a className="btn" href="https://github.com/Ayushrai9142/portfolio-3/blob/main/src/assets/resume/resume.pdf" download>Resume</a>
           </div>
         </nav>
       </div>
