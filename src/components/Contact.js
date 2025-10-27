@@ -1,19 +1,40 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
-  const [msg,setMsg] = useState('');
+  const [msg, setMsg] = useState('');
 
-  const handleSubmit = (e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
-    if(!form.name.value || !form.email.value || !form.message.value){
+    const name = form.name.value;
+    const email = form.email.value;
+    const message = form.message.value;
+
+    if (!name || !email || !message) {
       setMsg('Please fill all fields.');
       return;
     }
-    setMsg('Thanks! Message ready to be sent (frontend demo).');
-    form.reset();
-  }
+
+    emailjs.send(
+      'service_o8mz9f4', // <-- apna Service ID yahan likho
+      'template_izxdijg', // <-- tumhara Template ID
+      {
+        from_name: name,
+        from_email: email,
+        message: message,
+      },
+      'yfIHQQcLKJLB7ZzbU' // <-- apna EmailJS Public Key yahan likho
+    )
+    .then(() => {
+      setMsg('✅ Message sent successfully!');
+      form.reset();
+    })
+    .catch(() => {
+      setMsg('❌ Failed to send message. Try again.');
+    });
+  };
 
   return (
     <section id="contact">
@@ -22,11 +43,11 @@ const Contact = () => {
         <div className="contact-row">
           <div className="field">
             <label>Name</label>
-            <input type="text" name="name" placeholder="Your Name" required/>
+            <input type="text" name="name" placeholder="Your Name" required />
           </div>
           <div className="field">
             <label>Email</label>
-            <input type="email" name="email" placeholder="you@domain.com" required/>
+            <input type="email" name="email" placeholder="you@domain.com" required />
           </div>
         </div>
         <div className="field">
@@ -38,7 +59,7 @@ const Contact = () => {
       </form>
       <p>Or email me directly: <a href="mailto:ayushrai9142@gmail.com">ayushrai9142@gmail.com</a></p>
     </section>
-  )
+  );
 };
 
 export default Contact;
