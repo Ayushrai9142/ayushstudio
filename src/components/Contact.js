@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Contact.css';
-import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [msg, setMsg] = useState('');
@@ -18,14 +17,13 @@ const Contact = () => {
     }
 
     emailjs.send(
-      'service_o8mz9f4', // <-- apna Service ID yahan likho
+      'service_o8mz9f4', // <-- apna Service ID
       'template_izxdijg', // <-- tumhara Template ID
       {
         from_name: name,
         from_email: email,
         message: message,
-      },
-      'yfIHQQcLKJLB7ZzbU' // <-- apna EmailJS Public Key yahan likho
+      }
     )
     .then(() => {
       setMsg('✅ Message sent successfully!');
