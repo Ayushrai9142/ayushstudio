@@ -1,3 +1,4 @@
+/* global emailjs */
 import React, { useState } from 'react';
 import './Contact.css';
 
@@ -18,7 +19,7 @@ const Contact = () => {
 
     emailjs.send(
       'service_o8mz9f4', // <-- apna Service ID
-      'template_izxdijg', // <-- tumhara Template ID
+      'template_izxdijg', // <-- Template ID
       {
         from_name: name,
         from_email: email,
