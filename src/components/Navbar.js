@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import resumePdf from '../assets/resume/resume.pdf';
 import { FaMoon, FaSun, FaBars } from 'react-icons/fa';
 
 const Navbar = ({ theme, toggleTheme }) => {
@@ -33,7 +34,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             <button className="icon-btn" onClick={toggleTheme} aria-label="Toggle Theme">
               {theme === 'dark' ? <FaSun /> : <FaMoon />}
             </button>
-            <a className="btn" href="https://github.com/Ayushrai9142/portfolio-3/blob/main/src/assets/resume/resume.pdf" download>Resume</a>
+            <a className="btn" href={resumePdf} download>Resume</a>
           </div>
         </nav>
       </div>
