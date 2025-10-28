@@ -1,6 +1,6 @@
-/* global emailjs */
+
 import React, { useState } from 'react';
-import emailjs from '@emailjs/browser'; // ✅ correct import
+import emailjs from '@emailjs/browser'; 
 import './Contact.css';
 
 
