@@ -18,23 +18,6 @@ const Contact = () => {
       return;
     }
 
-<<<<<<< HEAD
-    emailjs.send(
-      'service_o8mz9f4', // <-- apna Service ID
-      'template_izxdijg', // <-- Template ID
-      {
-        from_name: name,
-        from_email: email,
-        message: message,
-      }
-    )
-    .then(() => {
-      setMsg('✅ Message sent successfully!');
-      form.reset();
-    })
-    .catch(() => {
-=======
-    // send using EmailJS (template variables must match your template)
     emailjs.send(
       'service_o8mz9f4',        // your Service ID
       'template_izxdijg',       // your Template ID
@@ -52,7 +35,6 @@ const Contact = () => {
     })
     .catch((error) => {
       console.error('EmailJS error:', error);
->>>>>>> 559244b (Added working EmailJS contact form and installed @emailjs/browser)
       setMsg('❌ Failed to send message. Try again.');
     });
   };

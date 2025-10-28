@@ -130,7 +130,6 @@ nav ul li a:hover::after {
   .hamburger {
     display: block;
     margin-left: auto;
-<<<<<<< HEAD
   }
 
   nav {
@@ -178,53 +177,3 @@ nav ul li a:hover::after {
     pointer-events: auto;
   }
 }
-
-=======
-  }
-
-  nav {
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 10px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-  }
-
-  nav.show {
-    max-height: 500px;
-    transition: max-height 0.5s ease-in;
-  }
-
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-  }
-
-  .actions {
-    margin-top: 10px;
-    width: 100%;
-    justify-content: flex-start;
-    gap: 10px;
-  }
-
-  .actions .btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Smooth fade animation */
-  nav ul, .actions {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-  }
-
-  nav.show ul, nav.show .actions {
-    opacity: 1;
-    pointer-events: auto;
-  }
-}
->>>>>>> 559244b (Added working EmailJS contact form and installed @emailjs/browser)
