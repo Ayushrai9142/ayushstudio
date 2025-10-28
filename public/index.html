@@ -17,7 +17,7 @@
     />
     <meta name="author" content="Ayush Rai" />
 
-    <!-- ✅ Open Graph / Facebook -->
+    <!-- ✅ Open Graph / Facebook / LinkedIn -->
     <meta property="og:title" content="Ayush Rai | Web Developer & Designer" />
     <meta
       property="og:description"
@@ -27,7 +27,7 @@
     <meta property="og:url" content="https://ayushstudio.netlify.app/" />
     <meta
       property="og:image"
-      content="%PUBLIC_URL%/portfolio-preview.png"
+      content="https://ayushstudio.netlify.app/portfolio-preview.png"
     />
 
     <!-- ✅ Twitter Card -->
@@ -39,15 +39,41 @@
     />
     <meta
       name="twitter:image"
-      content="%PUBLIC_URL%/portfolio-preview.png"
+      content="https://ayushstudio.netlify.app/portfolio-preview.png"
     />
+
+    <!-- ✅ JSON-LD Structured Data (Google SEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ayush Rai",
+        "url": "https://ayushstudio.netlify.app/",
+        "image": "https://ayushstudio.netlify.app/portfolio-preview.png",
+        "jobTitle": "Web Developer & Designer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Ayush Studio"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "RKGIT"
+        },
+        "sameAs": [
+          "https://github.com/Ayushrai9142",
+          "https://www.linkedin.com/in/ayushrai9142",
+          "mailto:ayushrai9142@gmail.com"
+        ],
+        "description": "Creative web developer skilled in React, Firebase, and responsive UI design. Passionate about crafting modern, fast, and secure websites."
+      }
+    </script>
 
     <!-- ✅ Icons -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <!-- ✅ Font and Styling (Optional Enhancement) -->
+    <!-- ✅ Font and Styling -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
