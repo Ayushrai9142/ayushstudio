@@ -42,4 +42,8 @@ const Navbar = ({ theme, toggleTheme }) => {
   );
 };
 
+<<<<<<< HEAD
 export default Navbar;
+=======
+export default Navbar;
+>>>>>>> 559244b (Added working EmailJS contact form and installed @emailjs/browser)

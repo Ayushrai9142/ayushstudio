@@ -1,5 +1,6 @@
 /* global emailjs */
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 const Contact = () => {
@@ -17,6 +18,7 @@ const Contact = () => {
       return;
     }
 
+<<<<<<< HEAD
     emailjs.send(
       'service_o8mz9f4', // <-- apna Service ID
       'template_izxdijg', // <-- Template ID
@@ -31,6 +33,26 @@ const Contact = () => {
       form.reset();
     })
     .catch(() => {
+=======
+    // send using EmailJS (template variables must match your template)
+    emailjs.send(
+      'service_o8mz9f4',        // your Service ID
+      'template_izxdijg',       // your Template ID
+      {
+        from_name: name,        // matches {{from_name}} in template
+        from_email: email,      // matches {{from_email}} in template
+        message: message,       // matches {{message}} in template
+      },
+      'yfIHQQcLKJLB7ZzbU'       // your Public Key
+    )
+    .then((result) => {
+      console.log('EmailJS success:', result.text);
+      setMsg('✅ Message sent successfully!');
+      form.reset();
+    })
+    .catch((error) => {
+      console.error('EmailJS error:', error);
+>>>>>>> 559244b (Added working EmailJS contact form and installed @emailjs/browser)
       setMsg('❌ Failed to send message. Try again.');
     });
   };
