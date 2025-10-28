@@ -1,4 +1,34 @@
+
+/* ===== Spinner Loader ===== */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #007bff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background: #f9f9f9;
+}
+
+.spinner {
+  border: 5px solid #ddd;
+  border-top: 5px solid #007bff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* === GLOBAL STYLES === */
+
 * {
   margin: 0;
   padding: 0;
