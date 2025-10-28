@@ -1,4 +1,3 @@
-
 /* ===== Spinner Loader ===== */
 .loader-container {
   display: flex;
@@ -28,7 +27,6 @@
 }
 
 /* === GLOBAL STYLES === */
-
 * {
   margin: 0;
   padding: 0;
@@ -51,8 +49,10 @@ a {
   color: inherit;
 }
 
+/* === SECTION SPACING FIX === */
 section {
   padding: 80px 7%;
+
 }
 
 /* === HERO SECTION === */
@@ -63,7 +63,7 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 80px; /* ✅ adjusted for fixed navbar */
 }
 
 .hero h1 {
@@ -103,9 +103,20 @@ section {
 .App.dark .card { background: #222; color: #ddd; }
 .App.dark .skill-pill { background: #09f; color: #000; }
 .App.dark footer { background: #222; }
+.App.dark a { color: #09f; }
 
 /* === RESPONSIVE === */
-@media(max-width: 768px) {
-  .hero h1 { font-size: 2rem; }
-  .hero p { font-size: 1rem; }
+@media (max-width: 768px) {
+  section {
+    padding: 60px 5%;
+  
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
 }
