@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import './Projects.css';
-import project1 from '../assets/images/project1.png';
-import project2 from '../assets/images/project2.png';
-import project3 from '../assets/images/project3.png';
+import project1 from '../assets/images/project1.webp';
+import project2 from '../assets/images/project2.webp';
+import project3 from '../assets/images/project3.webp';
 
 const projects = [
   {
