@@ -50,6 +50,7 @@
   font-size: 0.95rem;
   margin-bottom: 12px;
   color: #333;
+  transition: color 0.3s ease;
 }
 
 /* Tags section */
@@ -89,6 +90,34 @@
 
 .project-links a:hover {
   background: #007bff;
+}
+
+/* 🌙 Dark Mode Styles */
+.App.dark #projects {
+  background: #111;
+  color: #eee;
+}
+
+.App.dark .card {
+  background: #1b1b1b;
+  box-shadow: 0 4px 15px rgba(255,255,255,0.05);
+}
+
+.App.dark .card h3 {
+  color: #4dabff;
+}
+
+.App.dark .card p {
+  color: #ccc;
+}
+
+.App.dark .project-links a {
+  background: #333;
+  color: #fff;
+}
+
+.App.dark .project-links a:hover {
+  background: #09f;
 }
 
 /* Mobile responsive */

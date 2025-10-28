@@ -1,8 +1,36 @@
 footer {
-  background: #007bff;
-  color: #fff;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px;
+  font-size: 0.95rem;
+  color: #555;
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* 👈 subtle border line */
   margin-top: 50px;
-  font-size: 14px;
+  transition: background 0.3s, color 0.3s;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* 🌙 Dark mode support */
+.App.dark footer {
+  background: #111;
+  color: #ddd;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.App.dark .footer-links a {
+  color: #09f;
 }

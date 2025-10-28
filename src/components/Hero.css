@@ -3,25 +3,26 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-   align-items: flex-start; /* was center, now start */
-  padding: 120px 7% 60px 7%; 
-  gap: 80px; /* increased gap for text & profile */
+  align-items: flex-start;
+  padding: 120px 7% 60px 7%;
+  gap: 80px;
 }
 
 .hero-text {
   flex: 1;
-  max-width: 600px; /* ensure heading fits */
+  max-width: 600px;
   word-wrap: break-word;
-  margin-top: 20px; /* small spacing from top */
-
+  margin-top: 20px;
 }
 
 .hero-text h1 {
   font-size: 2.5rem;
-  line-height: 1.3; /* spacing between lines */
+  line-height: 1.3;
 }
 
-.hero .accent { color: #007bff; }
+.hero .accent {
+  color: #007bff;
+}
 
 .cta {
   margin-top: 20px;
@@ -30,7 +31,8 @@
   flex-wrap: wrap;
 }
 
-.btn, .btn-secondary {
+.btn,
+.btn-secondary {
   padding: 10px 25px;
   border-radius: 5px;
   text-decoration: none;
@@ -38,11 +40,19 @@
   transition: 0.3s;
 }
 
-.btn { background: #007bff; }
-.btn:hover { background: #0056b3; }
+.btn {
+  background: #007bff;
+}
+.btn:hover {
+  background: #0056b3;
+}
 
-.btn-secondary { background: #222; }
-.btn-secondary:hover { background: #555; }
+.btn-secondary {
+  background: #222;
+}
+.btn-secondary:hover {
+  background: #555;
+}
 
 .profile-card {
   flex: 1;
@@ -52,34 +62,60 @@
 .profile-card img {
   width: 200px;
   border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
 }
 
-.profile-info h3 { 
-  margin-top: 10px; 
-  color: #007bff; 
+.profile-info h3 {
+  margin-top: 10px;
+  color: #007bff;
 }
 
-.profile-info p { 
-  margin: 5px 0 10px; 
-  font-size: 0.95rem; 
+.profile-info p {
+  margin: 5px 0 10px;
+  font-size: 0.95rem;
+  color: #333;
 }
 
-.socials a { 
-  margin: 0 10px; 
-  color: #222; 
-  transition:0.3s; 
+/* === Social Icons === */
+.socials a {
+  margin: 0 10px;
+  color: #222;
+  transition: 0.3s;
 }
-.socials a:hover { color: #007bff; }
+.socials a:hover {
+  color: #007bff;
+}
+
+/* === DARK MODE FIXES === */
+.App.dark .hero-text h1,
+.App.dark .hero-text h2,
+.App.dark .profile-info p {
+  color: #eaeaea;
+}
+
+.App.dark .socials a {
+  color: #ccc;
+}
+.App.dark .socials a:hover {
+  color: #09f;
+}
+
+.App.dark .btn-secondary {
+  background: #444;
+}
+.App.dark .btn-secondary:hover {
+  background: #09f;
+  color: #000;
+}
 
 /* === MOBILE === */
 @media (max-width: 768px) {
-  .hero { 
-    flex-direction: column; 
-    text-align: center; 
-    padding: 60px 5%; 
-    gap: 40px; /* reduce gap for mobile */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+    gap: 40px;
   }
 
   .hero-text {
@@ -96,5 +132,7 @@
     align-items: center;
   }
 
-  .profile-card img { width: 150px; }
+  .profile-card img {
+    width: 150px;
+  }
 }
