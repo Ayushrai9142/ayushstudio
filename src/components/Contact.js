@@ -1,7 +1,8 @@
 /* global emailjs */
 import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser'; // ✅ correct import
 import './Contact.css';
+
 
 const Contact = () => {
   const [msg, setMsg] = useState('');
