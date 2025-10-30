@@ -57,7 +57,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             >
               {theme === "dark" ? <FaSun /> : <FaMoon />}
             </button>
-            <a className="btn" href={resumePdf} download>
+            <a className="btn" href="#" download>
               Resume
             </a>
           </div>
