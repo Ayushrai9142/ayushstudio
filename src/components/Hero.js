@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="cta">
           <a className="btn" href="#projects">View Projects</a>
           <a className="btn-secondary" href="mailto:ayushrai9142@gmail.com">Contact Me</a>
-          <a className="btn" href={resumePdf} download>Download Resume</a>
+          <a className="btn" href="#" download>Download Resume</a>
         </div>
       </div>
 
