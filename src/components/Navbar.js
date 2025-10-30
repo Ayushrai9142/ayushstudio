@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // ✅ React Router Link
 import "./Navbar.css";
+import resumePdf from '../assets/resume/resume.pdf';
 import { FaMoon, FaSun, FaBars } from "react-icons/fa";
 
 const Navbar = ({ theme, toggleTheme }) => {
@@ -57,7 +58,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             >
               {theme === "dark" ? <FaSun /> : <FaMoon />}
             </button>
-            <a className="btn" href="#" download>
+            <a className="btn" href={resumePdf}ddownload>
               Resume
             </a>
           </div>
