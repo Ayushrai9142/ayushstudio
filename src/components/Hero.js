@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import profileImg from '../assets/images/profile.webp';
-
+import resumePdf from '../assets/resume/resume.pdf';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="cta">
           <a className="btn" href="#projects">View Projects</a>
           <a className="btn-secondary" href="mailto:ayushrai9142@gmail.com">Contact Me</a>
-          <a className="btn" href="#" download>Download Resume</a>
+          <a className="btn" href={resumePdf}download>Download Resume</a>
         </div>
       </div>
 
