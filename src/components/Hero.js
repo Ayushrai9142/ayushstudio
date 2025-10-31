@@ -29,7 +29,7 @@ const Hero = () => {
 
         <div className="cta">
           <a className="btn" href="#projects">View Projects</a>
-          <a className="btn-secondary" href="mailto:ayushrai9142@gmail.com">Contact Me</a>
+          <a className="btn-secondary" href="mailto:ayushraistudio@gmail.com">Contact Me</a>
           <a className="btn" href={resumePdf}download>Download Resume</a>
         </div>
       </div>
@@ -51,7 +51,7 @@ const Hero = () => {
           <p>B.Tech CS • Web Developer • UI/UX Enthusiast</p>
           <div className="socials">
             <a
-              href="https://github.com/ayushrai9142"
+              href="https://github.com/ayushraistudio"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Profile"
@@ -59,7 +59,7 @@ const Hero = () => {
               <FaGithub size={24} />
             </a>
             <a
-              href="https://linkedin.com/in/ayushrai9142"
+              href="https://linkedin.com/in/ayushraistudio"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"
