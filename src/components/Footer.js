@@ -10,16 +10,16 @@ const Footer = () => {
     script.innerHTML = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Ayush Rai",
-      "url": "https://ayushstudio.netlify.app/",
-      "image": "https://ayushstudio.netlify.app/portfolio-preview.png",
-      "jobTitle": "Web Developer & Designer",
+      "name": "ayush rai",
+      "url": "https://ayushraistudio.netlify.app/",
+      "image": "https://ayushraistudio.netlify.app/portfolio-preview.png",
+      "jobTitle": "b.tech student ,Web Developer & Designer",
       "sameAs": [
-        "https://github.com/Ayushrai9142",
-        "https://linkedin.com/in/ayushrai9142",
-        "mailto:ayushrai9142@gmail.com"
+        "https://github.com/ayushraistudio",
+        "https://linkedin.com/in/ayushraistudio",
+        "mailto:ayushraistudio@gmail.com"
       ],
-      "description": "Creative web developer skilled in React, Firebase, and UI/UX design."
+      "description": "ayush rai (ayushraistudio) b.tech student Creative web developer skilled in React, Firebase, and UI/UX design."
     });
     document.head.appendChild(script);
   }, []);
@@ -29,9 +29,9 @@ const Footer = () => {
       <p>© {new Date().getFullYear()} <strong>Ayush Rai</strong> • Built with ❤️ using React</p>
 
       <div className="footer-links">
-        <a href="https://github.com/Ayushrai9142" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://linkedin.com/in/ayushrai9142" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:ayushrai9142@gmail.com">Email</a>
+        <a href="https://github.com/ayushraistudio" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/ayushraistudio" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:ayushraistudio@gmail.com">Email</a>
       </div>
     </footer>
   );
