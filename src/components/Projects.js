@@ -11,7 +11,7 @@ const projects = [
     img: project1,
     tags: ["HTML", "CSS", "JS"],
     demo: "https://ayushrai-portfolio.netlify.app",
-    code: "https://github.com/ayushrai9142/portfolio-2",
+    code: "https://github.com/ayushraistudio/portfolio-2",
   },
   {
     title: "Exam Portal",
@@ -19,7 +19,7 @@ const projects = [
     img: project2,
     tags: ["HTML", "CSS", "JS", "Firebase"],
     demo: "https://exam-porta.netlify.app",
-    code: "https://github.com/ayushrai9142/exam-portal",
+    code: "https://github.com/ayushraistudio/exam-portal",
   },
   {
     title: "Love Letter Maker",
@@ -27,7 +27,7 @@ const projects = [
     img: project3,
     tags: ["HTML", "CSS", "JS", "Firebase"],
     demo: "https://143-letter.netlify.app",
-    code: "https://github.com/ayushrai9142/love-letter",
+    code: "https://github.com/ayushraistudio/love-letter",
   },
 ];
 
