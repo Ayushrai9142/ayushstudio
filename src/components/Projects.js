@@ -10,7 +10,7 @@ const projects = [
     desc: "Responsive portfolio with dark mode, animations and accessibility-first design.",
     img: project1,
     tags: ["HTML", "CSS", "JS"],
-    demo: "https://ayushrai-portfolio.netlify.app",
+    demo: "https://ayushstudio.netlify.app",
     code: "https://github.com/ayushraistudio/portfolio-2",
   },
   {
